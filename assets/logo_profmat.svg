@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="100%" height="100%">
+  <!-- Definições de Gradientes -->
+  <defs>
+    <linearGradient id="profmat-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc" />
+      <stop offset="100%" stop-color="#003399" />
+    </linearGradient>
+    <linearGradient id="profmat-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#33cc33" />
+      <stop offset="100%" stop-color="#008000" />
+    </linearGradient>
+  </defs>
+
+  <!-- Globo Matemático de Rede Nacional (Esquerda) -->
+  <g transform="translate(35, 40)">
+    <!-- Círculo de fundo suave -->
+    <circle cx="0" cy="0" r="28" fill="#f0f5ff" />
+    
+    <!-- Contorno do Globo -->
+    <circle cx="0" cy="0" r="28" fill="none" stroke="url(#profmat-blue)" stroke-width="2.5" />
+    
+    <!-- Linhas de Longitude (Elipses Verticais) -->
+    <ellipse cx="0" cy="0" rx="18" ry="28" fill="none" stroke="url(#profmat-blue)" stroke-width="1" />
+    <ellipse cx="0" cy="0" rx="8" ry="28" fill="none" stroke="url(#profmat-blue)" stroke-width="1" />
+    <line x1="0" y1="-28" x2="0" y2="28" stroke="url(#profmat-blue)" stroke-width="1" />
+    
+    <!-- Linhas de Latitude (Linhas Horizontais) -->
+    <line x1="-24" y1="-14" x2="24" y2="-14" stroke="url(#profmat-blue)" stroke-width="1" />
+    <line x1="-28" y1="0" x2="28" y2="0" stroke="url(#profmat-blue)" stroke-width="1.5" />
+    <line x1="-24" y1="14" x2="24" y2="14" stroke="url(#profmat-blue)" stroke-width="1" />
+    
+    <!-- Órbita de elétrons/dados (Design PROFMAT) -->
+    <ellipse cx="0" cy="0" rx="34" ry="10" fill="none" stroke="url(#profmat-green)" stroke-width="2" transform="rotate(-30)" />
+    <!-- Nó na órbita -->
+    <circle cx="29.44" cy="-17" r="4.5" fill="url(#profmat-green)" stroke="#ffffff" stroke-width="1" transform="rotate(-30, 29.44, -17)" />
+  </g>
+
+  <!-- Inscrição PROFMAT (Direita) -->
+  <g transform="translate(80, 48)">
+    <text font-family="'Outfit', 'Inter', sans-serif" font-weight="800" font-size="28" fill="#003399" letter-spacing="1">PROFMAT</text>
+    <!-- Linha verde de detalhe -->
+    <line x1="0" y1="8" x2="135" y2="8" stroke="url(#profmat-green)" stroke-width="3.5" stroke-linecap="round" />
+  </g>
+</svg>

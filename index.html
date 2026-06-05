@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criptografia RSA - Apresentação de Slides Acadêmica</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Configuração do MathJax para renderizar equações LaTeX no navegador -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      },
+      startup: {
+        pageReady: () => {
+          return MathJax.startup.defaultPageReady().then(() => {
+            console.log('MathJax inicializado com sucesso.');
+          });
+        }
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+</head>
+<body>
+
+  <!-- CABEÇALHO FIXO SUPERIOR -->
+  <header class="academic-header" id="academic-header">
+    <div class="logos-container">
+      <img src="assets/uerj.png" alt="Logo UERJ" class="logo-item" id="logo-uerj" onerror="this.style.display='none'; document.getElementById('fallback-uerj').style.display='inline-block';">
+      <span class="badge" id="fallback-uerj" style="display:none; margin-bottom: 0;">UERJ</span>
+      
+      <div class="logo-divider"></div>
+      
+      <img src="assets/profmat.png" alt="Logo PROFMAT" class="logo-item" id="logo-profmat" onerror="this.style.display='none'; document.getElementById('fallback-profmat').style.display='inline-block';">
+      <span class="badge" id="fallback-profmat" style="display:none; margin-bottom: 0;">PROFMAT</span>
+      
+      <div class="logo-divider"></div>
+      
+      <img src="assets/logo_capes.svg" alt="Logo CAPES" class="logo-item" id="logo-capes" onerror="this.style.display='none'; document.getElementById('fallback-capes').style.display='inline-block';">
+      <span class="badge" id="fallback-capes" style="display:none; margin-bottom: 0;">CAPES</span>
+    </div>
+    
+    <div class="slide-title-area">
+      <h2 class="slide-current-title" id="current-slide-title">Título do Slide</h2>
+      <p class="slide-current-subtitle" id="current-slide-subtitle">Subtítulo do Slide</p>
+    </div>
+  </header>
+
+  <!-- CONTAINER DE VISUALIZAÇÃO DOS SLIDES -->
+  <main class="slides-viewport" id="slides-viewport">
+    <div class="slide-frame" id="slide-frame">
+      <!-- Os slides serão inseridos dinamicamente aqui via JavaScript -->
+    </div>
+  </main>
+
+  <!-- RODAPÉ FIXO INFERIOR -->
+  <footer class="academic-footer" id="academic-footer">
+    <!-- Barra de Progresso superior no rodapé -->
+    <div class="progress-bar-container">
+      <div class="progress-bar-fill" id="progress-bar-fill"></div>
+    </div>
+    
+    <div class="footer-left">
+      <!-- Alternar Tema Claro/Escuro -->
+      <button class="theme-toggle-btn" id="theme-toggle" title="Alternar tema claro/escuro" aria-label="Alternar tema">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      
+      <span class="slide-counter" id="slide-counter">01 / 07</span>
+    </div>
+    
+    <div class="footer-right">
+      <span class="keyboard-hint">Use as setas ◄ / ► ou Espaço do teclado</span>
+      
+      <!-- Botão Voltar -->
+      <button class="nav-btn" id="prev-btn" aria-label="Slide anterior">
+        <svg viewBox="0 0 24 24">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+        </svg>
+        <span>Voltar</span>
+      </button>
+      
+      <!-- Botão Próximo -->
+      <button class="nav-btn" id="next-btn" aria-label="Próximo slide">
+        <span>Próximo</span>
+        <svg viewBox="0 0 24 24">
+          <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Scripts da aplicação -->
+  <script src="slides.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

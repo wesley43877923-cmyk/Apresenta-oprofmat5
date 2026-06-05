@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Definições de Gradientes -->
+  <defs>
+    <linearGradient id="capes-teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00a3a4" />
+      <stop offset="100%" stop-color="#006666" />
+    </linearGradient>
+    <linearGradient id="capes-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0056b3" />
+      <stop offset="100%" stop-color="#002b66" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Grupo centralizado -->
+  <g transform="translate(100, 100)">
+    <!-- Elipse 1 (Horizontal - 0 graus) -->
+    <ellipse cx="0" cy="0" rx="80" ry="24" fill="none" stroke="url(#capes-teal)" stroke-width="5" />
+    
+    <!-- Elipse 2 (Rotacionada 60 graus) -->
+    <ellipse cx="0" cy="0" rx="80" ry="24" fill="none" stroke="url(#capes-teal)" stroke-width="5" transform="rotate(60)" />
+    
+    <!-- Elipse 3 (Rotacionada 120 graus) -->
+    <ellipse cx="0" cy="0" rx="80" ry="24" fill="none" stroke="url(#capes-teal)" stroke-width="5" transform="rotate(120)" />
+    
+    <!-- Núcleo do Átomo (Círculo Azul no centro) -->
+    <circle cx="0" cy="0" r="16" fill="url(#capes-blue)" stroke="#ffffff" stroke-width="2" filter="url(#glow)" />
+    
+    <!-- Elétrons (Pequenos círculos orbitando) -->
+    <!-- Elétron 1 (na órbita de 0 graus) -->
+    <circle cx="-80" cy="0" r="6.5" fill="url(#capes-teal)" stroke="#ffffff" stroke-width="1.5" />
+    
+    <!-- Elétron 2 (na órbita de 60 graus) -->
+    <circle cx="40" cy="69.28" r="6.5" fill="url(#capes-teal)" stroke="#ffffff" stroke-width="1.5" />
+    
+    <!-- Elétron 3 (na órbita de 120 graus) -->
+    <circle cx="40" cy="-69.28" r="6.5" fill="url(#capes-teal)" stroke="#ffffff" stroke-width="1.5" />
+  </g>
+</svg>

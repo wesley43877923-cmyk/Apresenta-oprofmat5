@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Logaritmos com Farmacocinética</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #f59e0b;
+            --background-color: #f8fafc;
+            --card-background: #ffffff;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, var(--primary-color), #3b82f6);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .calculator-card, .results-card {
+            background: var(--card-background);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        select, input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        select:focus, input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        .solution-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f1f5f9;
+            border-radius: 10px;
+        }
+
+        .solution-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .math-formula {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 300px;
+            margin-top: 20px;
+        }
+
+        .info-box {
+            background: #dbeafe;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aprendendo Logaritmos com Farmacocinética</h1>
+            <p class="subtitle">Entenda como os logaritmos modelam a eliminação de medicamentos no corpo humano</p>
+        </header>
+
+        <div class="main-content">
+            <div class="calculator-card">
+                <h2>Calculadora de Concentração</h2>
+                
+                <div class="form-group">
+                    <label for="drug-select">Selecione o Medicamento:</label>
+                    <select id="drug-select">
+                        <option value="paracetamol">Paracetamol - Meia-Vida: 2.5 horas</option>
+                        <option value="aspirina">Aspirina - Meia-Vida: 3.2 horas</option>
+                        <option value="ibuprofeno">Ibuprofeno - Meia-Vida: 2.0 horas</option>
+                        <option value="dipirona">Dipirona - Meia-Vida: 1.8 horas</option>
+                        <option value="metformina">Metformina - Meia-Vida: 4.5 horas</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="time-input">Tempo após administração (horas):</label>
+                    <input type="number" id="time-input" min="0" step="0.1" placeholder="Ex: 5.5">
+                </div>
+
+                <button onclick="calculateConcentration()">Calcular Concentração</button>
+
+                <div class="solution-section" id="solution-section" style="display: none;">
+                    <h3 class="solution-title">Solução Analítica</h3>
+                    <div class="math-formula" id="formula-display"></div>
+                    <div class="math-formula" id="result-display"></div>
+                </div>
+            </div>
+
+            <div class="results-card">
+                <h2>Resultados</h2>
+                <div class="info-box">
+                    <strong>Explicação:</strong> A concentração de um medicamento no sangue segue um modelo exponencial de decaimento. 
+                    Usamos a fórmula: <br><br>
+                    <span style="font-family: 'Courier New';">C(t) = C₀ × e<sup>-kt</sup></span><br><br>
+                    Onde:<br>
+                    • <i>C(t)</i> é a concentração no tempo <i>t</i><br>
+                    • <i>C₀</i> é a dose inicial<br>
+                    • <i>k</i> é a constante de eliminação<br>
+                    • <i>e</i> é a base dos logaritmos naturais
+                </div>
+
+                <div class="table-container">
+                    <table id="concentration-table">
+                        <thead>
+                            <tr>
+                                <th>Tempo (h)</th>
+                                <th>Concentração (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="concentration-chart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Aprendendo Logaritmos com Farmacocinética | Projeto Educativo</p>
+        </footer>
+    </div>
+
+    <script>
+        // Dados dos medicamentos
+        const drugsData = {
+            paracetamol: { halfLife: 2.5, initialDose: 100 },
+            aspirina: { halfLife: 3.2, initialDose: 100 },
+            ibuprofeno: { halfLife: 2.0, initialDose: 100 },
+            dipirona: { halfLife: 1.8, initialDose: 100 },
+            metformina: { halfLife: 4.5, initialDose: 100 }
+        };
+
+        let chart;
+
+        function calculateConcentration() {
+            const drugSelect = document.getElementById('drug-select');
+            const timeInput = document.getElementById('time-input');
+            
+            if (!timeInput.value || timeInput.value <= 0) {
+                alert('Por favor, insira um valor válido de tempo.');
+                return;
+            }
+
+            const selectedDrug = drugSelect.value;
+            const time = parseFloat(timeInput.value);
+            const drug = drugsData[selectedDrug];
+            
+            // Calcular constante de eliminação k = ln(2) / t½
+            const k = Math.log(2) / drug.halfLife;
+            
+            // Calcular concentração: C(t) = C₀ × e^(-kt)
+            const concentration = drug.initialDose * Math.exp(-k * time);
+            
+            // Exibir resultados
+            displaySolution(drug, k, time, concentration);
+            generateTable(drug, k);
+            updateChart(drug, k);
+            
+            document.getElementById('solution-section').style.display = 'block';
+        }
+
+        function displaySolution(drug, k, time, concentration) {
+            const formulaDisplay = document.getElementById('formula-display');
+            const resultDisplay = document.getElementById('result-display');
+            
+            formulaDisplay.innerHTML = `
+                <strong>Fórmula utilizada:</strong><br>
+                C(t) = ${drug.initialDose} × e<sup>-(${k.toFixed(3)} × ${time})</sup>
+            `;
+            
+            resultDisplay.innerHTML = `
+                <strong>Resultado:</strong><br>
+                Concentração após ${time} horas: ${concentration.toFixed(2)}% da dose inicial
+            `;
+        }
+
+        function generateTable(drug, k) {
+            const tableBody = document.getElementById('table-body');
+            tableBody.innerHTML = '';
+            
+            // Gerar dados para a tabela (tempo de 0 até 24 horas)
+            for (let t = 0; t <= 24; t += 2) {
+                const concentration = drug.initialDose * Math.exp(-k * t);
+                const row = `<tr>
+                    <td>${t}</td>
+                    <td>${concentration.toFixed(2)}</td>
+                </tr>`;
+                tableBody.insertAdjacentHTML('beforeend', row);
+            }
+        }
+
+        function updateChart(drug, k) {
+            const ctx = document.getElementById('concentration-chart').getContext('2d');
+            
+            // Gerar dados para o gráfico
+            const labels = [];
+            const data = [];
+            
+            for (let t = 0; t <= 24; t += 0.5) {
+                labels.push(t);
+                data.push(drug.initialDose * Math.exp(-k * t));
+            }
+            
+            // Destruir gráfico anterior se existir
+            if (chart) {
+                chart.destroy();
+            }
+            
+            // Criar novo gráfico
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Concentração (%)',
+                        data: data,
+                        borderColor: '#2563eb',
+                        backgroundColor: 'rgba(37, 99, 235, 0.1)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Tempo (horas)'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Concentração (% da dose inicial)'
+                            },
+                            beginAtZero: true
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `Concentração: ${context.parsed.y.toFixed(2)}%`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Inicializar com o primeiro medicamento
+        window.onload = function() {
+            document.getElementById('drug-select').value = 'paracetamol';
+            calculateConcentration();
+        };
+    </script>
+</body>
+</html>
