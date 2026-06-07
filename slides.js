@@ -4,6 +4,7 @@
 // Coorientador: Prof. Dr. Marcello Montillo Provenza
 
 const slidesData = [
+
  {
     id: 1,
     title: "O Conhecimento Especializado do Professor de Matemática",
@@ -73,7 +74,7 @@ const slidesData = [
         <div class="card highlight-card">
           <h3 style="margin-bottom: 12px; color: var(--primary-color);">Objetivo Geral</h3>
           <p style="font-size: 1.05rem; line-height: 1.6;">
-            Caracterizar, sob a lente teórica do modelo <strong>MTSK</strong>, os conhecimentos especializados necessários para o ensino qualificado de logaritmos, estruturando e validando um curso de extensão voltado para licenciandos em matemática.
+            Caracterizar, sob a lente teórica do modelo <strong>MTSK</strong>, os conhecimentos especializados necessários para o ensino de logaritmos, estruturando e validando um curso de extensão voltado para licenciandos em matemática.
           </p>
         </div>
       </div>
@@ -91,45 +92,70 @@ const slidesData = [
   {
     id: 6,
     title: "Modelos de Conhecimento do Professor",
-    subtitle: "Evolução Histórica e Modelagem Teórica",
+    subtitle: "Evolução dos Modelos",
     layout: "split",
     content: `
-      <div class="split-left">
-        <h3>Necessidade de Investigação</h3>
-        <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 15px;">
-          Historicamente, a formação docente oscilou entre o foco exclusivo na matemática acadêmica e a pedagogia geral. Modelos modernos buscam integrar essas áreas.
-        </p>
-        <div class="card highlight-card">
-          <strong>Conhecimento Especializado:</strong>
-          O saber do professor não é meramente uma versão diluída do saber do matemático, mas sim um conhecimento qualitativamente diferente e profissionalmente voltado para a transposição didática.
-        </div>
-      </div>
-      <div class="split-right">
-        <h3 style="text-align: center; margin-bottom: 10px;">Evolução dos Marcos Teóricos</h3>
-        <div class="grid-3" style="gap: 8px;">
-          <div class="card" style="padding: 12px; text-align: center;">
+<div class="split-left">
+<div class="rows-2" style="gap: 8px;">
+
+<div class="card highlight-card">
+          <h3 style="margin-bottom: 12px; color: var(--primary-color);">Necessidade de Investigação</h3>
+          <p style="font-size: 1.05rem; line-height: 1.6;">
+            Historicamente, a formação docente oscilou entre o foco exclusivo na matemática acadêmica e a pedagogia geral. Modelos modernos buscam integrar essas áreas.
+
+          </p>
+</div>
+
+<div class="card highlight-card">
+          <h3 style="margin-bottom: 12px; color: var(--primary-color);">Conhecimento Especializado:</h3>
+          <p style="font-size: 1.05rem; line-height: 1.6;">
+             O saber do professor não é meramente uma versão diluída do saber do matemático, mas sim um conhecimento qualitativamente diferente e profissionalmente voltado para a Docência.
+          </p>
+</div>
+
+</div>
+</div>   
+  
+
+<div class="split-right"> 
+<div class="rows-2" style="gap: 2px;">
+
+        <div class="grid-3" style="gap:2px;">
+          
+	  <div class="card" style="padding: 12px; text-align: center;">
             <strong style="color: var(--primary-color);">Shulman (1986)</strong>
             <span class="tag" style="margin: 5px 0;">PCK</span>
-            <small style=" display: block; margin-top: 5px; line-height: 1.3;">
-              Introduz o <em>Pedagogical Content Knowledge</em> como fusão entre pedagogia e conteúdo.
+            <small style=" display: block; margin-top: 5px; line-height: 1.5;">
+              Introduz o <em>Conhecimento Pedagógico do Conteúdo</em> como fusão entre pedagogia e conteúdo.
             </small>
           </div>
+
           <div class="card" style="padding: 12px; text-align: center;">
             <strong style="color: var(--primary-color);">Ball et al. (2008)</strong>
             <span class="tag" style="margin: 5px 0;">MKT</span>
-            <small style=" display: block; margin-top: 5px; line-height: 1.3;">
-              <em>Mathematical Knowledge for Teaching</em>. Detalha subdomínios como CCK e SCK de forma empírica.
+            <small style=" display: block; margin-top: 5px; line-height: 1.5;">
+              <em>Conhecimento Matemático Do Professor</em>. Detalha subdomínios como CCK e SCK de forma empírica.
             </small>
           </div>
+
           <div class="card" style="padding: 12px; text-align: center; border-left: 2px solid var(--secondary-color);">
             <strong style="color: var(--secondary-color);">Carrillo (2013)</strong>
             <span class="tag" style="margin: 5px 0;">MTSK</span>
-            <small style="display: block; margin-top: 5px; line-height: 1.3;">
+            <small style="display: block; margin-top: 5px; line-height: 1.5;">
               Considera que <strong>todo</strong> o conhecimento do professor de matemática é intrinsecamente especializado.
             </small>
-          </div>
-        </div>
-      </div>
+	  </div>
+ </div>
+ 
+
+<div class="card highlight-card">      
+
+<div style="display: flex; align-items: center; justify-content: center; background: #f8fafc; border-			radius: 6px; padding: 0.5rem;">
+          	<img src="assets/modelos.png" alt="Modelo MTSK" style="max-width: 110%; max-height: 110%; object-fit: 			contain;">
+</div>
+</div>
+</div>
+</div>
     `
   },
   {
@@ -724,9 +750,17 @@ subtitle: "Um lugar geométrico",
     </div>
   `
 },
+{
+title: "Considerações Finais",
+subtitle: "Limitações e Desdobramentos da Pesquisa",
+layout: "default",
+ content:` <div style=\"line-height: 1.5; text-align: justify;\"><h3>Limitações da Pesquisa</h3><ul><li><strong>Ausência de Aplicação Empírica:</strong> A principal limitação é o caráter teórico-produtivo do trabalho; o curso de extensão foi fundamentado e estruturado, mas não chegou a ser aplicado a licenciandos ou professores durante a pesquisa, carecendo de dados observacionais de intervenção.</li></ul><h3>Desdobramentos Futuros</h3><ul><li><strong>Validação Prática:</strong> Realização de uma aplicação piloto do curso em turmas de licenciatura, utilizando avaliações de pré e pós-teste para mensurar a mobilização real do conhecimento especializado (MTSK).</li><li><strong>Expansão Temática:</strong> Adaptação da estrutura modular para outros tópicos estruturantes da matemática, como funções exponenciais, trigonometria e progressões.</li><li><strong>Foco nas Crenças:</strong> Investigação aprofundada sobre como as crenças dos professores interagem com a mobilização dos subdomínios do MTSK no cotidiano escolar.</li></ul></div>
+`
+},
 
 {
 id:30,
+
   "title": "Agradecimentos",
   "layout": "default",
   "content": `
