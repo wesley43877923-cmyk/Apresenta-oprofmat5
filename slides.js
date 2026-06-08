@@ -33,23 +33,24 @@ const slidesData = [
         <div class="card warning-card">
           <h3 style="color: var(--warning-color); margin-bottom: 8px;">"Para que eu preciso estudar isso?"</h3>
           <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-primary);">
-            O logaritmo é frequentemente apresentado como uma mera ferramenta mecânica de cálculo ou mero artifício algébrico, desprovido de conexão real ou significado geométrico.
+            O logaritmo é frequentemente apresentado como uma mera ferramenta 
+            mecânica de cálculo  com foco procidimetal das propriedades ou mero artifício algébrico, desprovido de conexão real ou significado geométrico.
           </p>
         </div>
-        <p style="margin-top: 10px;"><em>Foco principal: superar o viés meramente procedimental e recuperar a construção histórica e visual de seu significado.</em></p>
+        
       </div>
       <div class="split-right">
         <ul class="styled-list">
           <li><strong>Ensino Tradicional:</strong> Centrado em manipulação algébrica estéril e na imediata definição de função inversa da exponencial.</li>
-          <li><strong>Obstáculos Epistemológicos:</strong> Incompreensão de domínios reais de funções, aplicação indevida de regras operatórias e dificuldade de convessão entre registros semióticos.</li>
+          <li><strong>Obstáculos Epistemológicos:</strong> Incompreensão do comportamento variacional de funções, aplicação indevida de regras operatórias e dificuldade de convessão entre registros semióticos.</li>
           <li><strong>Irracionalidade:</strong> Apresentação da irracionalidade sem construção pedagógica.</li>
-          <li><strong>Esvaziamento de Contexto:</strong> Desconexão total com fenômenos de variação e escalas científicas.</li>
+          <li><strong>Esvaziamento de Contexto:</strong> Desconexão total com fenômenos reais e escalas científicas.</li>
         </ul>
       </div>
     `
   },
   {
-    id: 4,
+    id: 3,
     title: "Pergunta de Pesquisa",
     subtitle: "O Problema Central Investigado",
     layout: "default",
@@ -59,13 +60,14 @@ const slidesData = [
           "Que conhecimentos especializados do professor de matemática devem ser mobilizados para o ensino de logaritmo no Ensino Médio, e de que modo um curso de extensão para licenciandos pode promover a reflexão crítica sobre essas dimensões do saber docente?"
         </blockquote>
         <p style="margin-top: 25px; font-size: 1.15rem; color: var(--text-secondary);">
-          Esta pergunta articula a necessidade teórica de caracterizar o saber docente especializado com a proposição prática de um espaço formativo crítico-reflexivo.
+          Esta pergunta articula a necessidade teórica de caracterizar o saber docente especializado 
+          com a proposição prática do curso de extensão.
         </p>
       </div>
     `
   },
   {
-    id: 5,
+    id: 4,
     title: "Objetivos da Pesquisa",
     subtitle: "Metas Geral e Específicas do Trabalho",
     layout: "split",
@@ -83,14 +85,16 @@ const slidesData = [
         <ol class="styled-list" style="list-style-type: decimal; padding-left: 20px;">
           <li style="padding-left: 10px; list-style-position: inside;">Analisar criticamente duas abordagens de introdução ao conceito a definição como inversa da função exponencial e a caracterização geométrica via área sob a hipérbole, avaliando suas bases epistemológicas debatendo a viabilidade didática no Ensino Médio;</li>
           <li style="padding-left: 10px; list-style-position: inside;">Investigar como a irracionalidade de certos logaritmos e a análise variacional em problemas de modelagem podem ser mobilizados para superar obstáculos de aprendizagem</li>
-          <li style="padding-left: 10px; list-style-position: inside;">Elaborar e propor um conjunto de materiais reflexivos que fomentem a discussão sobre a prática docente, integrando a história da matemática, múltiplos registros de representação semiótica e as diretrizes curriculares vigentes. Assim, a pesquisa não se limita à produção de um produto, mas configura-se como um estudo investigativo que articula fundamentação teórica, análise crítica e formação docente.</li>
+          <li style="padding-left: 10px; list-style-position: inside;">Elaborar e propor um conjunto de materiais 
+          que fomentem a discussão sobre a prática docente.
+          .</li>
         </ol>
       </div>
 
     `
   },
   {
-    id: 6,
+    id: 5,
     title: "Modelos de Conhecimento do Professor",
     subtitle: "Evolução dos Modelos",
     layout: "split",
@@ -159,7 +163,7 @@ const slidesData = [
     `
   },
   {
-    id: 7,
+    id: 6,
     title: "O Modelo MTSK e seus Domínios",
     subtitle: "Organização Estrutural do Modelo de Carrillo",
     layout: "split",
@@ -186,7 +190,7 @@ const slidesData = [
     `
   },
   {
-    id: 8,
+    id: 7,
     title: "Os Seis Subdomínios do MTSK",
     subtitle: "Categorização Completa do Saber Docente Especializado",
     layout: "split",
@@ -244,7 +248,7 @@ const slidesData = [
     `
   },
   {
-    id: 9,
+    id: 8,
     title: "Organização do Produto Educacional",
     subtitle: "Relação entre Capítulos da Dissertação e Módulos do Curso",
     layout: "default",
@@ -290,7 +294,7 @@ const slidesData = [
     `
   },
   {
-    id: 10,
+    id: 9,
     title: "A História da Matemática como Saber Especializado",
     subtitle: "Mobilização de KoT e KMT através da Evolução dos Logaritmos",
     layout: "split",
@@ -310,17 +314,19 @@ const slidesData = [
       <div class="split-right">
         <h3>Dimensão Epistemológica</h3>
         <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px;">
-          No modelo <strong>MTSK</strong>, a história dos conceitos atua no <strong>KoT</strong> (caracterização conceitual histórica) e subsidia o <strong>KMT</strong> (fornecendo materiais didáticos genuínos, como tabelas de Napier e réguas de cálculo).
+          No modelo <strong>MTSK</strong>, a história dos conceitos atua no 
+          <strong>KoT</strong> (caracterização conceitual histórica) e subsidia o 
+          <strong>KMT</strong> (fornecendo materiais didáticos, como tabelas de Napier e réguas de cálculo).
         </p>
         <div class="card warning-card">
-          <strong>Apreciação Cultural (BNCC):</strong>
-          Promove a reflexão sobre a matemática como conhecimento socialmente construído, em oposição à abordagem puramente técnica do formalismo tradicional.
+          <strong>(BNCC):</strong>
+          Promover a reflexão sobre a matemática como conhecimento socialmente construído, em oposição à abordagem puramente técnica e formal.
         </div>
       </div>
     `
   },
   {
-    id: 11,
+    id: 10,
     title: "Régua de Cálculo: Instrumento Logarítmico",
     subtitle: "Materialização Geométrica da Propriedade Fundamental",
     layout: "split",
@@ -367,6 +373,26 @@ const slidesData = [
       </div>
     `
   },
+{
+id:11,
+  "title": "O Núcleo Conceitual dos Módulos 2 e 3",
+subtitle: "Duas portas de entrada",
+
+  "layout": "default",
+  "content": `
+    
+        <div class="card" style="margin-bottom: 0.5rem; padding: 0.6rem;">
+          <strong style="font-size: 1.5rem;">Duas porpostas de introdução do conceito.</strong>
+          <p style="font-size: 1rem; margin-top: 0.2rem; line-height: 2.5;">
+            A centralidade dos Módulos 2 e 3 reside no fato de eles apresentarem as duas "portas de entrada" para o conceito de logaritmo, fundamentando a transição da utilidade prática para a abstração matemática. O Módulo 2 foca na formalização algébrica como função inversa da exponencial, utilizando o estratégias para contornar o problema da irracionalidade (como na equação $2^x = 5$) para justificar a necessidade do símbolo logarítmico, o Módulo 3 promove uma abordagem difernte ao definir o logaritmo natural de forma autônoma como a área sob a hipérbole $y = \\frac{1}{x}$  , utilizando somas trapezoidais no GeoGebra para contornara necessidade dos conceitos de limite e integral. Juntos, esses módulos são vitais para o  debate do conhecimento especializado do professor (MTSK), pois permitem um caminho que perpassa todos os subdominios para uma tomada de decisão. 
+          </p>
+        </div>
+        
+    </div>
+  `
+},
+  
+
   {
     id: 12,
     title: "O Problema Epistemológico da Potenciação e a Irracionalidade",
@@ -423,27 +449,8 @@ const slidesData = [
     `
   },
 
-{
-id:14,
-  "title": "O Núcleo Conceitual dos Módulos 2 e 3",
-subtitle: "Duas portas de entrada",
-
-  "layout": "default",
-  "content": `
-    
-        <div class="card" style="margin-bottom: 0.5rem; padding: 0.6rem;">
-          <strong style="font-size: 1.5rem;">Duas porpostas de introdução do conceito.</strong>
-          <p style="font-size: 1rem; margin-top: 0.2rem; line-height: 2.5;">
-            A centralidade dos Módulos 2 e 3 reside no fato de eles apresentarem as duas "portas de entrada" para o conceito de logaritmo, fundamentando a transição da utilidade prática para a abstração matemática. O Módulo 2 foca na formalização algébrica como função inversa da exponencial, utilizando o estratégias para contornar o problema da irracionalidade (como na equação $2^x = 5$) para justificar a necessidade do símbolo logarítmico, o Módulo 3 promove uma abordagem difernte ao definir o logaritmo natural de forma autônoma como a área sob a hipérbole $y = \\frac{1}{x}$  , utilizando somas trapezoidais no GeoGebra para contornara necessidade dos conceitos de limite e integral. Juntos, esses módulos são vitais para o  debate do conhecimento especializado do professor (MTSK), pois permitem um caminho que perpassa todos os subdominios para uma tomada de decisão. 
-          </p>
-        </div>
-        
-    </div>
-  `
-},
-  
   {
-id:15,
+id:14,
   "title": "Módulo 3: O Logaritmo como Área sob a Hipérbole",
 subtitle: "Um lugar geométrico",
   "layout": "default",
@@ -483,7 +490,7 @@ subtitle: "Um lugar geométrico",
 },
 
   {
-    id: 16,
+    id: 15,
     title:"Transformação de Linear",
     subtitle: "T(x,y)=(kx,y/k)",
     layout: "default",
@@ -500,7 +507,7 @@ subtitle: "Um lugar geométrico",
     `
   },
   {
-    id: 17,
+    id: 16,
     title: "Módulo 3: Definindo L(a) como Área sob a Hipérbole",
     subtitle: "Visualização Dinâmica no GeoGebra",
     layout: "default",
@@ -517,7 +524,7 @@ subtitle: "Um lugar geométrico",
     `
   },
   {
-    id: 18,
+    id: 17,
     title: "Propriedade L(ab)=L(a).L(b) no GeoGebra",
     subtitle: "Simulação e Visual de Áreas Sobrapostas",
     layout: "default",
@@ -534,7 +541,7 @@ subtitle: "Um lugar geométrico",
     `
   },
 {
-    id: 19,
+    id: 18,
     title: "Propriedade da Potêcia e Mudança de Base",
     subtitle: "Simulação e Visual de Áreas Sobrapostas",
     layout: "default",
@@ -552,9 +559,9 @@ subtitle: "Um lugar geométrico",
   },
 
   {
-    id: 20,
-    title: "Módulo 4: Análise Variacional – Do Padrão à Modelagem",
-    subtitle: "Relações Conceituais entre Incrementos Aditivos e Multiplicativos",
+    id: 19,
+    title: "Módulo 4: Análise Variacional, Do Padrão à Modelagem",
+    subtitle: "Tomada de decisão.",
     layout: "split",
     content: `
       <div class="split-left">
@@ -579,9 +586,31 @@ subtitle: "Um lugar geométrico",
           Análise de dados reais da variação de temperatura de uma xícara de café a 90°C em uma sala a 20°C:
         </p>
         <ul style="; margin-bottom: 10px; padding-left: 15px;">
-          <li>As temperaturas simples $T(t)$ não possuem razão constante entre intervalos.</li>
+          
           <li>A diferença de temperatura em relação ao ambiente $T(t) - 20$ possui razão constante ($r \\approx 0.85$ a cada 2 min).</li>
         </ul>
+        <div class="card" style="margin-bottom: 0.5rem; padding: 0.5rem;">
+  <strong style="font-size: 0.9rem; display: block; margin-bottom: 0.3rem;">Tabela de Dados Apresentada ao Cursista</strong>
+  <div style="overflow-y: auto; max-height: 180px; border: 1px solid #eee; border-radius: 4px;">
+    <table style="font-size: 0.7rem; margin-top: 0; border-collapse: collapse; width: 100%;">
+      <thead>
+        <tr style="background: var(--primary, #0056b3); color: white;">
+          <th style="padding: 0.3rem; border: 1px solid #ccc;">t (min)</th>
+          <th style="padding: 0.3rem; border: 1px solid #ccc;">T(t) °C</th>
+          <th style="padding: 0.3rem; border: 1px solid #ccc;">T(t) - 20</th>
+          <th style="padding: 0.3rem; border: 1px solid #ccc;">Razão</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="border: 1px solid #ccc;">0</td><td style="border: 1px solid #ccc;">90,00</td><td style="border: 1px solid #ccc;">70,00</td><td style="border: 1px solid #ccc;">—</td></tr>
+        <tr><td style="border: 1px solid #ccc;">2</td><td style="border: 1px solid #ccc;">79,65</td><td style="border: 1px solid #ccc;">59,65</td><td style="border: 1px solid #ccc;">0,85</td></tr>
+        <tr><td style="border: 1px solid #ccc;">4</td><td style="border: 1px solid #ccc;">70,83</td><td style="border: 1px solid #ccc;">50,83</td><td style="border: 1px solid #ccc;">0,85</td></tr>
+        <tr><td style="border: 1px solid #ccc;">6</td><td style="border: 1px solid #ccc;">63,31</td><td style="border: 1px solid #ccc;">43,31</td><td style="border: 1px solid #ccc;">0,85</td></tr>
+        <tr><td style="border: 1px solid #ccc;">8</td><td style="border: 1px solid #ccc;">56,31</td><td style="border: 1px solid #ccc;">36,91</td><td style="border: 1px solid #ccc;">0,85</td></tr>
+
+        </table>
+  </div>
+</div>
         <div class="card" style="padding: 12px; margin: 0; border-left: 4px solid var(--secondary-color);">
           <strong>Equação do Modelo:</strong>
           <div class="math-formula" style=" margin: 5px 0;">$T(t) = 20 + 70 \\cdot (0.85)^{t/2}$</div>
@@ -736,26 +765,53 @@ subtitle: "Um lugar geométrico",
  
 {
   title: "Considerações Finais",
-  subtitle: "Articulação entre a Fundamentação Teórica e o Produto Educacional",
+  subtitle: "",
   layout: "default",
   content: `
-    <div style="line-height: 1.5; text-align: justify;">
-      <p>O objetivo geral de caracterizar o conhecimento especializado (MTSK) necessário para o ensino de logaritmos e desenvolver um curso de extensão para licenciandos foi atingido através da articulação entre a fundamentação teórica da dissertação e as atividades do Produto Educacional.</p>
+    
       
-      <p><strong>Objetivo (i) - Análise crítica de abordagens de introdução:</strong> Este objetivo foi cumprido no Capítulo 7 da dissertação, onde se comparou a definição tradicional de inversa da exponencial (Capítulo 4) com a caracterização geométrica via área sob a hipérbole (Capítulo 5). No curso, o Módulo 2 materializa a abordagem algébrica, enquanto o Módulo 3 promove uma ruptura epistemológica ao utilizar o GeoGebra para definir o logaritmo natural de forma autônoma.</p>
+        <h3>Objetivo Geral</h3>
+        <p>O objetivo geral de caracterizar o conhecimento especializado (MTSK) necessário para o ensino de logaritmos e desenvolver um curso de extensão para licenciandos foi atingido através da articulação entre a fundamentação teórica da dissertação e as atividades do Produto Educacional.</p>
       
-      <p><strong>Objetivo (ii) - Investigação da irracionalidade e análise variacional:</strong> A dissertação abordou a irracionalidade no Capítulo 6, utilizando o Teorema Fundamental da Aritmética para fundamentar o KoT do professor, e a análise variacional no Capítulo 8. No produto, o Módulo 2 guia o aluno pela investigação da equação $2^x = 5$ para evidenciar a necessidade do símbolo logarítmico, enquanto o Módulo 4 utiliza a modelagem do resfriamento do café para ensinar a dinâmica das taxas de variação.</p>
+    
+    
       
-      <p><strong>Objetivo (iii) - Elaboração de materiais reflexivos e interdisciplinares:</strong> Este objetivo foi consolidado no Capítulo 9 e na produção do curso, garantindo que as atividades propostas não apenas transmitam conteúdo, mas também fomentem a reflexão docente e a conexão com outras áreas do conhecimento.</p>
-    </div>
+        <h3>Objetivo Específico (i)</h3>
+        <p><strong>Análise crítica de abordagens de introdução:</strong> Este objetivo foi cumprido no Capítulo 7 da dissertação, onde se comparou a definição tradicional de inversa da exponencial (Capítulo 4) com a caracterização geométrica via área sob a hipérbole (Capítulo 5). No curso, o Módulo 2 materializa a abordagem algébrica, enquanto o Módulo 3 promove uma ruptura epistemológica ao utilizar o GeoGebra para definir o logaritmo natural de forma autônoma.</p>
+      
+      
+        <h3>Objetivo Específico (ii)</h3>
+        <p><strong>Investigação da irracionalidade e análise variacional:</strong> A dissertação abordou a irracionalidade no Capítulo 6, utilizando o Teorema Fundamental da Aritmética para fundamentar o KoT do professor, e a análise variacional no Capítulo 8. No produto, o Módulo 2 guia o aluno pela investigação da equação $2^x = 5$ para evidenciar a necessidade do símbolo logarítmico, enquanto o Módulo 4 utiliza a modelagem do resfriamento do café para ensinar a dinâmica das taxas de variação.</p>
+      
+      
+        <h3>Objetivo Específico (iii)</h3>
+        <p><strong>Elaboração de materiais reflexivos e interdisciplinares:</strong> Este objetivo foi consolidado no Capítulo 9 e na produção do curso, garantindo que as atividades propostas não apenas transmitam conteúdo, mas também fomentem a reflexão docente e a conexão com outras áreas do conhecimento.</p>
+      
+    
   `
 },
 {
-title: "Considerações Finais",
-subtitle: "Limitações e Desdobramentos da Pesquisa",
-layout: "default",
- content:` <div style=\"line-height: 1.5; text-align: justify;\"><h3>Limitações da Pesquisa</h3><ul><li><strong>Ausência de Aplicação Empírica:</strong> A principal limitação é o caráter teórico-produtivo do trabalho; o curso de extensão foi fundamentado e estruturado, mas não chegou a ser aplicado a licenciandos ou professores durante a pesquisa, carecendo de dados observacionais de intervenção.</li></ul><h3>Desdobramentos Futuros</h3><ul><li><strong>Validação Prática:</strong> Realização de uma aplicação piloto do curso em turmas de licenciatura, utilizando avaliações de pré e pós-teste para mensurar a mobilização real do conhecimento especializado (MTSK).</li><li><strong>Expansão Temática:</strong> Adaptação da estrutura modular para outros tópicos estruturantes da matemática, como funções exponenciais, trigonometria e progressões.</li><li><strong>Foco nas Crenças:</strong> Investigação aprofundada sobre como as crenças dos professores interagem com a mobilização dos subdomínios do MTSK no cotidiano escolar.</li></ul></div>
-`
+  title: "Considerações Finais",
+  subtitle: "Limitações e Desdobramentos da Pesquisa",
+  layout: "default",
+  content: `<div style="line-height: 1.5; text-align: justify;">
+    <div class="card">
+      <h3>Limitações da Pesquisa</h3>
+      <ul>
+        <li><strong>Condição de existencia:</strong> Não houve atividade focada na condiçãi de existência.</li>
+        <li><strong>Ausência de Aplicação Empírica:</strong> A principal limitação é o caráter teórico-produtivo do trabalho; o curso de extensão foi fundamentado e estruturado, mas não chegou a ser aplicado a licenciandos ou professores durante a pesquisa, carecendo de dados observacionais de intervenção.</li>
+      </ul>
+        </ul>
+    </div>
+    <div class="card" style="margin-top: 0.2rem;">
+      <h3>Desdobramentos Futuros</h3>
+      <ul>
+        <li><strong>Validação Prática:</strong> Realização de uma aplicação piloto do curso em turmas de licenciatura, utilizando avaliações de pré e pós-teste para mensurar a mobilização real do conhecimento especializado (MTSK).</li>
+        <li><strong>Expansão Temática:</strong> Adaptação da estrutura modular para outros tópicos estruturantes da matemática, como funções exponenciais, trigonometria e progressões.</li>
+        <li><strong>Foco nas Crenças:</strong> Investigação aprofundada sobre como as crenças dos professores interagem com a mobilização dos subdomínios do MTSK no cotidiano escolar.</li>
+      </ul>
+    </div>
+  </div>`
 },
 
 {
@@ -774,8 +830,7 @@ id:30,
       <p style=" margin-bottom: 1rem; line-height: 1.4;">
         À minha esposa <strong>Évile</strong>: Sem a tranquilidade que ela proporciona na minha vida, esse sonho não teria sido realizado.
       </p>
-      <p style= "margin-bottom: 1.5rem; line-height: 1.4;">
-        À UERJ e ao PROFMAT, pela oportunidade de construir um produto educacional com base sólida.</p>
+      
 
 <p style= "margin-bottom: 1.5rem; line-height: 1.4;">
 Agradeço aos membros da banca examinadora, e às instituições fomento e ensino <strong>UERJ</strong>, <strong>PROFMAT</strong> e <strong>CAPES</strong> por propiciarem o desenvolvimento desta pesquisa científica.
