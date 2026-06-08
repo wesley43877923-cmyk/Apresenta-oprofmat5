@@ -69,14 +69,15 @@ const slidesData = [
   {
     id: 4,
     title: "Objetivos da Pesquisa",
-    subtitle: "Metas Geral e Específicas do Trabalho",
+    subtitle: "Objetivos, Geral e Específicos do Trabalho",
     layout: "split",
     content: `
       <div class="split-left">
         <div class="card highlight-card">
           <h3 style="margin-bottom: 12px; color: var(--primary-color);">Objetivo Geral</h3>
           <p style="font-size: 1.05rem; line-height: 1.6;">
-            Caracterizar, sob a lente teórica do modelo <strong>MTSK</strong>, os conhecimentos especializados necessários para o ensino de logaritmos, estruturando e validando um curso de extensão voltado para licenciandos em matemática.
+            Caracterizar, sob a lente teórica do modelo <strong>MTSK</strong>, os conhecimentos especializados necessários 
+			para o ensino de logaritmos, estruturando um curso de extensão voltado para licenciandos em matemática.
           </p>
         </div>
       </div>
