@@ -527,7 +527,7 @@ subtitle: "Um lugar geométrico",
   },
   {
     id: 17,
-    title: "Propriedade L(ab)=L(a).L(b) no GeoGebra",
+    title: "Propriedade L(ab)=L(a)+L(b) no GeoGebra",
     subtitle: "Simulação e Visual de Áreas Sobrapostas",
     layout: "default",
     content: `
