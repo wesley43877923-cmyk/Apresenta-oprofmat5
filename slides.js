@@ -41,10 +41,11 @@ const slidesData = [
       </div>
       <div class="split-right">
         <ul class="styled-list">
-          <li><strong>Ensino Tradicional:</strong> Centrado em manipulação algébrica estéril e na imediata definição de função inversa da exponencial.</li>
-          <li><strong>Obstáculos Epistemológicos:</strong> Incompreensão do comportamento variacional de funções, aplicação indevida de regras operatórias e dificuldade de convessão entre registros semióticos.</li>
+          <li><strong>Ensino Tradicional:</strong> Centrado em manipulação algébrica e na imediata definição
+		  de função inversa da exponencial.</li>
+         
           <li><strong>Irracionalidade:</strong> Apresentação da irracionalidade sem construção pedagógica.</li>
-          <li><strong>Esvaziamento de Contexto:</strong> Desconexão total com fenômenos reais e escalas científicas.</li>
+          <li><strong>Esvaziamento de Contexto:</strong> Desconexão com fenômenos reais e escalas científicas.</li>
         </ul>
       </div>
     `
@@ -61,7 +62,7 @@ const slidesData = [
         </blockquote>
         <p style="margin-top: 25px; font-size: 1.15rem; color: var(--text-secondary);">
           Esta pergunta articula a necessidade teórica de caracterizar o saber docente especializado 
-          com a proposição prática do curso de extensão.
+          com a proposição conhecimeto do curso de extensão.
         </p>
       </div>
     `
