@@ -800,7 +800,7 @@ subtitle: "Um lugar geométrico",
     <div class="card">
       <h3>Limitações da Pesquisa</h3>
       <ul>
-        <li><strong>Condição de existencia:</strong> Não houve atividade focada na condiçãi de existência.</li>
+        <li><strong>Condição de existencia:</strong> Não houve atividade focada na condição de existência.</li>
         <li><strong>Ausência de Aplicação Empírica:</strong> A principal limitação é o caráter teórico-produtivo do trabalho; o curso de extensão foi fundamentado e estruturado, mas não chegou a ser aplicado a licenciandos ou professores durante a pesquisa, carecendo de dados observacionais de intervenção.</li>
       </ul>
         </ul>
